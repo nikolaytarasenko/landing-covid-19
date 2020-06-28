@@ -1,0 +1,42 @@
+.s-symptoms {
+  overflow: hidden;
+}
+
+.symptoms {
+  &__header {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__image-wrapper {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -120px;
+      bottom: 180px;
+      width: 169px;
+      height: 172px;
+      background: url("../images/content/symp-left.png") no-repeat;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -180px;
+      bottom: 40px;
+      width: 241px;
+      height: 179px;
+      background: url("../images/content/symp-right.png") no-repeat;
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+  }
+}

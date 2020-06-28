@@ -1,0 +1,65 @@
+.s-about {
+  position: relative;
+
+  &__c-big {
+    position: absolute;
+    right: 0;
+    top: 500px;
+  }
+
+  &__c-small {
+    position: absolute;
+    right: 100px;
+    top: 750px;
+  }
+}
+
+.about {
+  display: flex;
+
+  &__image-wrapper,
+  &__info {
+    flex: 1;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    position: relative;
+    max-width: 130%;
+    left: -100px;
+    top: 0;
+    transform: rotate(-10deg);
+  }
+
+  &__info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    .s-description {
+      font-size: 1.25rem;
+    }
+
+    //&::after {
+    //  content: '';
+    //  position: absolute;
+    //  left: -900px;
+    //  top: -200px;
+    //  width: 980px;
+    //  height: 797px;
+    //  background: url('../images/content/coronavirus-img.jpg') no-repeat;
+    //  z-index: 0;
+    //}
+  }
+
+  &__content {
+    max-width: 648px;
+  }
+}

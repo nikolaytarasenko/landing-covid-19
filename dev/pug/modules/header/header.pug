@@ -1,0 +1,11 @@
+header.header
+    .container
+        .header__container
+            a(href="#").logo
+                img(src="static/images/general/logo.png", alt="logo")
+            nav.main-nav
+                each item in ['Overview', 'Contagion', 'Symptoms', 'Prevention', 'Contact']
+                    if item==='Contact'
+                        a.main-nav__link.main-nav__link--red(href="#")=item
+                    else
+                        a.main-nav__link(href="#")=item

@@ -1,0 +1,24 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+$color-main: #4B4F51;
+$color-red: #FB4C47;
+$color-green: #035755;
+
+// Sizes
+$base-font-size: 16px;
+
+$breakpoints: (
+  "phone"       : 400px,
+  "phone-wide"  : 480px,
+  "phablet"     : 560px,
+  "tablet-small": 640px,
+  "tablet"      : 768px,
+  "tablet-wide" : 1024px,
+  "desktop"     : 1248px,
+  "desktop-wide": 1440px
+);
+
+$content-size: 1440px;
+
+// Fonts

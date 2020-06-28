@@ -1,0 +1,84 @@
+.s-contagion {
+  margin-bottom: 150px;
+}
+
+.contagion {
+  position: relative;
+
+  &__header {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 100px;
+    text-align: center;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__c-small {
+    position: absolute;
+    bottom: 0;
+    left: -145px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 70px 52px;
+  background: #FFFFFF;
+  box-shadow: 0 35px 87px rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  transform: translateY(0);
+  transition: 0.2s ease-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 6px;
+    left: 50%;
+    bottom: 0;
+    background: transparent;
+    border-radius: 0 0 100px 100px;
+    transition: 0.2s ease-out;
+  }
+
+  &:hover {
+    transform: translateY(-20px);
+
+    &::after {
+      background: $color-red;
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  &__image {
+    max-width: 275px;
+    margin-bottom: 55px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    color: $color-green;
+    font-weight: 500;
+    font-size: 2.125rem;
+    line-height: 1.5;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 1.125rem;
+    text-transform: capitalize;
+  }
+}
